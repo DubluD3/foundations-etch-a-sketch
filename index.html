@@ -10,49 +10,38 @@
 
 <body>
     <script>
-        console.log("Hello, World!")
 
-        const myInt = 5;
-        const myFloat = 6.667;
+        function add7(number) {
+            return number + 7
+        }
 
-        myInt;
-        myFloat;
+        function multiply(number1, number2) {
+            return number1 * number2
+        }
 
-        const lotsOfDecimal = 1.766584988675746363;
-        lotsOfDecimal;
+        function capitalize(text) {
+            return text.charAt(0).toUpperCase() + text.toLowerCase().slice(1)
+        }
 
-        const twoDecimapPlaces = lotsOfDecimal.toFixed(2);
-        twoDecimapPlaces
+        function lastLetter(text2) {
+            text = text2.length
+            return text2.charAt(Number(text-1))
+        }
 
-        console.log("myInt is a " + typeof myInt);
-        console.log("myFloat is a " + typeof myFloat);
-        console.log(twoDecimapPlaces)
+        let answer = parseInt(prompt("Please enter the number you would like to FizzBuzz up to: "));
 
-        let myNumber = "74";
-        myNumber = Number(myNumber) + 3;
+        for (let i = 1; i <= answer; i++) {
+  if (i % 3 === 0 && i % 5 === 0) {
+    console.log("FizzBuzz");
+  } else if (i % 3 === 0) {
+    console.log("Fizz");
+  } else if (i % 5 === 0) {
+    console.log("Buzz");
+  } else {
+    console.log(i);
+  }
+}
 
-        console.log(myNumber)
-
-        const mathNumbers = 60 % 3;
-        console.log(mathNumbers)
-
-        const num1 = 10;
-        const num2 = 50;
-
-        console.log(9 * num1)
-        console.log(num1 ** 3);
-        console.log(num2 / num1);
-        console.log(5 + 10 * 3);
-        console.log((num2 % 9) * num1);
-        console.log(num2 + num1 / 8 + 2);
-
-        let num3 = 4;
-        num3++
-        console.log(num3);
-        console.log(48 % 2);
-
-        const sglDbl = 'Would you eat a "fish supper"?';
-        console.log(sglDbl)
     </script>
 </body>
 
